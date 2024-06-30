@@ -13,7 +13,7 @@ public class rollball : MonoBehaviour
         float moveX = Input.GetAxis("Horizontal") * speed * Time.deltaTime;
        // Move the circle along the X-axis
         transform.Translate(moveX, 0, 0);
-        if (Input.GetKey(KeyCode.UpArrow)) { moVUp.velocity = Vector2.up * speed; }
+        if (Input.GetKey(KeyCode.W)) { moVUp.velocity = Vector2.up * speed; }
     }
 }
 
