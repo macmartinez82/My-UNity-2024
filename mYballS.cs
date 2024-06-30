@@ -13,7 +13,7 @@ public class mYballS : MonoBehaviour
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.UpArrow)) { rb.velocity = Vector2.up * speed; }
-        float X = Input.GetAxis("Horizontal")* speed* Time.deltaTime; 
+        float X = Input.GetAxis("Horizontal")* speed * Time.deltaTime; 
         transform.Translate (X,0,0);
     }
 }
